@@ -22,7 +22,7 @@ import {nanoid} from "nanoid"
     const [currentNoteId, setCurrentNoteId] = useState(
         (notes[0] && notes[0].id) || ""
     )
-    const [state , setState] = useState(() => console.log("State initialized now"))
+    // const [state , setState] = useState(() => console.log("State initialized now"))
 
     useEffect(() => {
         localStorage.setItem("notes", JSON.stringify(notes))
